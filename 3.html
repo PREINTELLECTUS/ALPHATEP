@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALIFICACION SIMULACRO RETO DEL BUHO</title>
+    <link rel="stylesheet" href="assets/styles3.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <img src="assets/img/god123.png" alt="Logo PreIntellectus" class="login-logo">
+        <h1>CALIFICACION SIMULACRO RETO DEL BUHO</h1>
+        <p>NOTA: Por favor, tenga en cuenta que esta es una calificacion superficial, no representa metodos de calificacion similares al icfes </p>
+        
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+        </div>
+        
+        <div class="materias-container">
+            <div class="materia">
+                <h2>Matemáticas</h2>
+                <p>Total de preguntas: 30 (Ponderación: 3)</p>
+                <div class="input-group">
+                    <label for="correctas-mates">Respuestas correctas:</label>
+                    <input type="number" id="correctas-mates" min="0" max="30">
+                </div>
+            </div>
+            
+            <div class="materia">
+                <h2>Lectura</h2>
+                <p>Total de preguntas: 27 (Ponderación: 3)</p>
+                <div class="input-group">
+                    <label for="correctas-lectura">Respuestas correctas:</label>
+                    <input type="number" id="correctas-lectura" min="0" max="27">
+                </div>
+            </div>
+            
+            <div class="materia">
+                <h2>Ciencias Naturales</h2>
+                <p>Total de preguntas: 39 (Ponderación: 3)</p>
+                <div class="input-group">
+                    <label for="correctas-naturales">Respuestas correctas:</label>
+                    <input type="number" id="correctas-naturales" min="0" max="39">
+                </div>
+            </div>
+            
+            <div class="materia">
+                <h2>Sociales y Ciudadanas</h2>
+                <p>Total de preguntas: 33 (Ponderación: 3)</p>
+                <div class="input-group">
+                    <label for="correctas-sociales">Respuestas correctas:</label>
+                    <input type="number" id="correctas-sociales" min="0" max="33">
+                </div>
+            </div>
+            
+            <div class="materia">
+                <h2>Inglés</h2>
+                <p>Total de preguntas: 35 (Ponderación: 1)</p>
+                <div class="input-group">
+                    <label for="correctas-ingles">Respuestas correctas:</label>
+                    <input type="number" id="correctas-ingles" min="0" max="35">
+                </div>
+            </div>
+        </div>
+        
+        <button id="calcular" class="btn calcular-btn">Calcular Puntuación</button>
+        
+        <div id="resultados" class="hidden">
+            <h2>Resultados para: <span id="nombre-estudiante"></span></h2>
+            
+            <div class="resultados-materias">
+                <div class="resultado-materia">
+                    <h3>Matemáticas</h3>
+                    <p><span id="puntaje-mates">0</span>/100</p>
+                    <p class="detalle-calculo" id="detalle-mates"></p>
+                </div>
+                
+                <div class="resultado-materia">
+                    <h3>Lectura</h3>
+                    <p><span id="puntaje-lectura">0</span>/100</p>
+                    <p class="detalle-calculo" id="detalle-lectura"></p>
+                </div>
+                
+                <div class="resultado-materia">
+                    <h3>Ciencias Naturales</h3>
+                    <p><span id="puntaje-naturales">0</span>/100</p>
+                    <p class="detalle-calculo" id="detalle-naturales"></p>
+                </div>
+                
+                <div class="resultado-materia">
+                    <h3>Sociales y Ciudadanas</h3>
+                    <p><span id="puntaje-sociales">0</span>/100</p>
+                    <p class="detalle-calculo" id="detalle-sociales"></p>
+                </div>
+                
+                <div class="resultado-materia">
+                    <h3>Inglés</h3>
+                    <p><span id="puntaje-ingles">0</span>/100</p>
+                    <p class="detalle-calculo" id="detalle-ingles"></p>
+                </div>
+            </div>
+            
+            <div class="resultado-final">
+                <h3>Puntuación Total</h3>
+                <p class="puntuacion-total"><span id="puntaje-total">0</span>/500</p>
+                <p class="detalle-calculo" id="detalle-total"></p>
+            </div>
+            
+            <button id="generar-pdf" class="btn pdf-btn">Generar PDF</button>
+        </div>
+    </div>
+
+    <script src="assets/scriptpdf.js"></script>
+</body>
+</html>
