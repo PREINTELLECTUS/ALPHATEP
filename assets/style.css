@@ -1,0 +1,127 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #1e1e1e;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-box {
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 22px;
+    margin-bottom: 2px;
+    color: #ffffff;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 9px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #1e1e1e;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 15px;
+}
+
+.login-btn:hover {
+    background-color: #2980b9;
+}
+
+.forgot-password {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+.welcome-section {
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.welcome-section h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #f6fbff;
+}
+
+.guest-access {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer {
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+footer p:first-child {
+    margin-bottom: 5px;
+}
+
+@media (max-width: 480px) {
+    .login-box {
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 20px;
+    }
+}
+.login-logo {
+    width: 250px;
+    margin: 5px auto 0px auto;
+    display: block;
+}

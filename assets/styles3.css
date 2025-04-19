@@ -1,0 +1,192 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    line-height: 1.6;
+    padding: 20px;
+    margin: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #2d2d2d;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+h1, h2, h3 {
+    color: #ffffff;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.materias-container {
+    margin-bottom: 30px;
+}
+
+.materia {
+    background-color: #252525;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+}
+
+.materia h2 {
+    margin-top: 0;
+    color: #3498db;
+}
+
+.materia p {
+    margin: 5px 0 15px 0;
+    color: #b0b0b0;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #333;
+    color: #fff;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+.calcular-btn {
+    background-color: #2ecc71;
+}
+
+.calcular-btn:hover {
+    background-color: #27ae60;
+}
+
+.pdf-btn {
+    background-color: #e74c3c;
+    margin-top: 20px;
+}
+
+.pdf-btn:hover {
+    background-color: #c0392b;
+}
+
+.hidden {
+    display: none;
+}
+
+#resultados {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #252525;
+    border-radius: 8px;
+}
+
+.resultados-materias {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.resultado-materia {
+    background-color: #333;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.resultado-materia h3 {
+    margin-top: 0;
+    color: #3498db;
+}
+
+.resultado-materia p {
+    margin: 5px 0;
+    font-size: 1.2rem;
+}
+
+.resultado-final {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.puntuacion-total {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2ecc71;
+}
+
+.detalle-calculo {
+    font-size: 0.8rem;
+    color: #b0b0b0;
+    margin-top: 5px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+    
+    .resultados-materias {
+        grid-template-columns: 1fr;
+    }
+}
+.login-logo {
+    width: 350px;
+    margin: 0% auto 0px auto;
+    display: block;
+}
