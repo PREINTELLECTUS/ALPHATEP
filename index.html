@@ -44,8 +44,31 @@
 
     <script>
         document.getElementById("loginForm").addEventListener("submit", function(event) {
-            event.preventDefault(); // Previene el envío real del formulario
-            window.location.href = "1.html"; 
+            event.preventDefault();
+            
+            // Credenciales específicas
+            const USUARIO_CORRECTO = "RTOBUHOINTELLECTUSFREE";
+            const CONTRASENA_CORRECTA = "PREINTECTUSCALA2025";
+            
+            const usuarioIngresado = document.getElementById("username").value.trim();
+            const passwordIngresado = document.getElementById("password").value.trim();
+            const errorElement = document.getElementById("errorMessage");
+            
+            // Verificar credenciales exactas (case-sensitive)
+            if (usuarioIngresado === USUARIO_CORRECTO && passwordIngresado === CONTRASENA_CORRECTA) {
+                // Redirigir si las credenciales son correctas
+                window.location.href = "1.html";
+            } else {
+                // Mostrar mensaje de error genérico por seguridad
+                errorElement.textContent = "Credenciales incorrectas. Por favor verifique.";
+                errorElement.style.display = "block";
+                
+                // Opcional: Limpiar campos
+                document.getElementById("password").value = "";
+                
+                // Enfocar el campo de contraseña
+                document.getElementById("password").focus();
+            }
         });
     </script>
 </body>
